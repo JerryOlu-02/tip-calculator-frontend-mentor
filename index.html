@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body class="flex--col">
+    <h1>SPLI<br />TTER</h1>
+
+    <main class="flex">
+      <section class="left--section flex--col">
+        <div class="bill--container">
+          <label for="bill--input">Bill</label><br />
+          <input
+            class="bill"
+            placeholder="0"
+            type="number"
+            value=""
+            name=""
+            id="bill--input"
+          />
+        </div>
+
+        <div class="select--tip--container flex--col">
+          <p>Select Tip %</p>
+          <div class="select--tip--div">
+            <button class="keys">5%</button>
+            <button class="keys">10%</button>
+            <button class="keys">15%</button>
+            <button class="keys">25%</button>
+            <button class="keys">50%</button>
+            <input
+              class="custom"
+              type="text"
+              value=""
+              placeholder="Custom"
+              id="custom--input"
+            />
+          </div>
+        </div>
+
+        <div class="people--container">
+          <label for="people--input">Number of People</label><br />
+          <input
+            class="people"
+            type="number"
+            placeholder="0"
+            value=""
+            name=""
+            id="people--input"
+          />
+        </div>
+      </section>
+
+      <section class="right--section flex--col">
+        <div class="flex--col right--section--top">
+          <div class="flex">
+            <p>Tip Amount <br />/ person</p>
+            <h1 class="flex">
+              <span>$</span>
+              <aside class="tip--amount--per--person">4.27</aside>
+            </h1>
+          </div>
+
+          <div class="flex">
+            <p>Total <br />/ person</p>
+            <h1 class="flex">
+              <span>$</span>
+              <aside class="total--per--person">32.79</aside>
+            </h1>
+          </div>
+        </div>
+
+        <button class="keys reset">RESET</button>
+      </section>
+    </main>
+    <script src="tipcalc.js" charset="utf-8"></script>
+  </body>
+</html>
